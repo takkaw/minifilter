@@ -1,7 +1,7 @@
 require 'helper'
 
 class TestMinifilter < Test::Unit::TestCase
-  should "probably rename this file and start testing for real" do
-    flunk "hey buddy, you should probably rename this file and start testing for real"
+  should "MiniTest::output == MiniFilter" do
+    assert_equal MiniTest::Unit.output ,MiniFilter
   end
 end

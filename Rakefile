@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "minifilter"
   gem.homepage = "http://github.com/takkaw/minifilter"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{minitest output filter}
+  gem.description = %Q{minifilter is yet another minitest output formatter and colorizer}
   gem.email = "takkaw@gmail.com"
   gem.authors = ["takkaw"]
   # dependencies defined in Gemfile
@@ -29,7 +29,7 @@ require 'rake/testtask'
 Rake::TestTask.new(:test) do |test|
   test.libs << 'lib' << 'test'
   test.pattern = 'test/**/test_*.rb'
-  test.verbose = true
+  test.verbose = false
 end
 
 require 'rcov/rcovtask'
@@ -42,7 +42,7 @@ end
 
 task :default => :test
 
-require 'rake/rdoctask'
+require 'rdoc/task'
 Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
