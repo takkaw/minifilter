@@ -2,7 +2,7 @@
 +minifilter+ is yet another minitest output filter(formatter and colorizer).
 
 You can use example filter 'minifilter/pretty' if you favorite.
-Or regeister your original filter to +MiniFilter+ through +register+ method.
+Or regeist your original filter to +MiniFilter+ through +register+ method.
 
 == install
   $ gem install minifilter
