@@ -1,6 +1,28 @@
 = minifilter
 
-Description goes here.
+== install
+$ gem install minifilter
+
+== how to use (use pretty example)
+require 'minifilter/pretty'
+
+And run test as usual.
+
+== how to use (custormize)
+require 'minifilter'
+
+# register filter 
+MiniFilter.register { |o|
+  col = MiniFilter::COLORS
+  if o == "E"
+    "#{col.red}Errorrrorroororoooo#{col.clear}"
+  else
+    o
+  end
+}
+
+And run test.
+
 
 == Contributing to minifilter
  
