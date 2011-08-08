@@ -19,11 +19,14 @@ Gem::Specification.new do |s|
   s.files = [
     ".document",
     "Gemfile",
+    "Gemfile.lock",
     "LICENSE.txt",
     "README.rdoc",
     "Rakefile",
     "VERSION",
-    Dir.glob('lib/**/*.rb')
+    "lib/minifilter.rb",
+    "lib/minifilter/pretty.rb",
+    "minifilter.gemspec",
     "test/helper.rb",
     "test/test_minifilter.rb"
   ]
